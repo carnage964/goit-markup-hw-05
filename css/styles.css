@@ -423,13 +423,13 @@ section {
 }
 
 .sm-footer-title {
-    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    
+    color: #fff;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .link-footer:hover,
@@ -461,16 +461,16 @@ section {
     font-size: 12px;
 }
 
-.subscribe {
+.sub {
     margin-left: auto;
 }
 
-.subscribe-form {
+.sub-form {
     display: flex;
     gap: 24px;
 }
 
-.subscribe-button {
+.sub-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -490,7 +490,7 @@ section {
     justify-content: center;
 }
 
-.icon-footer {
+.icon-form-footer {
     fill: white;
     margin-left: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -518,7 +518,7 @@ section {
     fill: #f4f4fd;
 }
 
-/*--Modal--*/
+/* --- modal --- */
 
 .backdrop {
     position: fixed;
@@ -534,7 +534,7 @@ section {
     pointer-events: none;
 }
 
-.backdrop.open-card {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -603,7 +603,7 @@ section {
     fill: #4d5ae5;
 }
 
-.field-class:focus {
+.classic-field:focus {
     border-color: #4d5ae5;
 }
 
@@ -619,7 +619,7 @@ section {
     margin-bottom: 4px;
 }
 
-.field-class {
+.classic-field {
     width: 100%;
     height: 40px;
     font-family: "Roboto", sans-serif;
@@ -635,7 +635,7 @@ section {
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.section-comment {
+.comment-section {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -654,11 +654,11 @@ section {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-comment:focus-within {
+.comment-section:focus-within {
     border-color: #4d5ae5;
 }
 
-/* .section-comment::placeholder {
+/* .comment-section::placeholder {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -759,7 +759,7 @@ section {
     cursor: pointer;
 }
 
-.check:checked+.enter-data span {
+.check:checked+.field-descr span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
